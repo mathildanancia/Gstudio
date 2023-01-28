@@ -1,0 +1,301 @@
+article {
+	-webkit-columns: 5 200px;
+  -moz-columns: 5 200px;
+  columns: 5 200px;
+	-webkit-column-gap: 1.4em !important;
+  -moz-column-gap: 1.4em !important;
+	column-gap: 1.4em !important;
+	color: $grey;
+	word-break: true;
+	font-family:  "ConcernRegular",sans-serif;
+	text-align: justify;
+  text-justify: inter-word;
+}
+
+.article-image{
+		-webkit-columns: 4 200px;
+	-moz-columns: 4 200px;
+	columns: 4 200px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-image {
+	flex: 1;
+	img{
+		width: 100%;
+	}
+}
+
+.col-text {
+	color: $grey;
+	word-break: true;
+	font-family:  "ConcernRegular",sans-serif;
+	text-align: justify;
+  	text-justify: inter-word;
+  	margin-top: -0.21rem;
+}
+
+.subscribe{
+	display: flex;
+	height: 22px;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.yourEmail{
+	flex: 1;
+	height: 23px;
+	margin: 0px;
+	text-align: left;
+	border: 1px solid white;
+	background-color: white !important;
+	color: $green !important;
+	cursor: pointer;
+  	outline : none;
+	-moz-outline : none;
+	padding: 1px 0px 0px 7px;
+	font-size: 10px;
+	font-family: "ConcernLight";
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $green !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $green !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $green !important;
+}
+
+
+.submit{
+	width: 60px;
+	height: 28px;
+	margin: 0px;
+	text-align: center;
+	border: 1px solid $green;
+	background-color: transparent !important;
+	cursor: pointer;
+	background-color: $green !important;
+	color: white;
+	padding-top: 5px;
+    font-size: 10px;
+	font-family: "ConcernLight";
+	outline : none !important;
+	-moz-outline : none !important;
+  	&:hover {
+  		transition: all 0.2s ease-out;
+  	}
+
+}
+
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+    -webkit-border-radius:0;
+    border-radius:0;
+	box-shadow: none !important;
+    background-color: transparent !important;
+	outline : none !important;
+	-moz-outline : none !important;
+}
+
+/*iphone 5*/
+@media (min-width: 320px) {
+	article{
+		font-size: 14.5px;
+    	line-height: 18px;
+    	padding: 0.5em 0;
+	}
+
+	.col-text {
+    	font-size: 14.5px;
+    	line-height: 18px;
+    	padding: 0.5em 0;
+	}
+
+	.col-image {
+		width: 100%;
+		img{
+			width: calc(100vw - 30px);
+		}
+	}
+
+	.submit{
+		height: 26px;
+		padding-top: 3px;
+    	margin-right: 0.1rem;
+	}
+
+	.row {
+		padding: 0.9em 0;
+	}
+}
+
+/*blackberry*/
+@media (min-width: 360px) {
+	article{
+		font-size: 16px;
+    	line-height: 20px;
+	}
+
+	.col-text {
+		font-size: 16px;
+    	line-height: 20px;
+    	padding: 0.5em 0;
+   }
+}
+
+/*Iphone 6/7/8 X */
+@media (min-width: 375px) {
+	article{
+		font-size: 17px;
+    	line-height: 20px;
+	}
+
+	.col-text {
+		font-size: 17px;
+    	line-height: 20px;
+	}
+}
+
+/*Iphone 6/7/8+ */
+@media (min-width: 414px) {
+	.col-text {
+		font-size: 19px;
+    	line-height: 21px;
+    	padding: 0.5em 0;
+	}
+}
+
+/*ipad*/
+@media (min-width: 720px) {
+
+ /* article {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 1.4em !important;
+    -moz-column-gap: 1.4em !important;
+    column-gap: 1.4em !important;
+    min-height: 0;
+    font-size: 14px;
+    line-height: 17px;
+}*/
+
+  article {
+    min-height: 0;
+  }
+
+	.row {
+		padding: 0.9em 0;
+	}
+
+	.col-image {
+		flex: 1;
+		img{
+			width: 100%;
+		}
+	}
+
+	.col-text {
+		padding: 0;
+		padding-top: 0.9em;
+    font-size: 12px;
+    line-height: 14px;
+	}
+
+	.submit{
+		height: 28px;
+		padding-top: 2px;
+	}
+
+}
+
+/*ipad pro*/
+@media (min-width: 1024px) {
+  .col-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+/*Laptops*/
+@media (min-width: 1200px) {
+	article{
+    	font-size: 13.2px;
+    	line-height: 17px;
+	    padding: 0;
+	}
+
+	.row {
+		padding: 1.3em 0;
+	}
+
+	.col-text {
+		flex: 0 0 calc(20% - 1.15em);
+		padding-left: 1.4em;
+    padding-top: 0em;
+	  font-size: 13.2px;
+	  line-height: 17px;
+	}
+
+	.col-image {
+		flex: 1;
+		img{
+			width: 100%;
+		}
+	}
+
+
+
+}
+
+/*large device*/
+@media (min-width: 1920px) {
+
+	article{
+	    font-size: 19.5px;
+	    line-height: 24px;
+	    padding: 0;
+	}
+
+	.row {
+		padding: 1.6em 0;
+	}
+
+	.col-text {
+		flex: 0 0 calc(20% + 1.4em);
+		padding-left: 1.4em;
+	    font-size: 19.5px;
+	    line-height: 24px;
+	}
+
+	.yourEmail {
+	    height: 30px;
+	    font-size: 14px;
+	    padding: 3px 0px 0px 10px;
+	}
+
+	.submit{
+	    height: 30px;
+	    font-size: 14px;
+	    padding-top: 3px;
+	}
+
+
+}

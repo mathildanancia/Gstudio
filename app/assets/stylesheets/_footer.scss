@@ -1,0 +1,370 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: calc(100vw - 80px);
+  //height: 20vh;
+  font-family: "ConcernLight",sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: $lightgrey;
+  padding-top: 0.7em;
+}
+
+.footer-logo{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.jump{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-left {
+  margin-bottom: - 6px;
+  display: inline;
+}
+
+.footer-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-right *{
+  text-transform: uppercase;
+}
+
+.footer-address {
+  margin-right: 1.4rem;
+  margin-bottom: - 6px;
+}
+
+.footer-info {
+  margin-right: 1.4rem;
+  margin-bottom: - 6px;
+}
+
+.footer-menu{
+  width: calc(((100vw - 80px) / 5) - 1rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.request{
+  width: calc(((100vw - 80px) / 5) - 1rem);
+}
+
+.line {
+  border-bottom: 1px solid #008738;
+  width: calc(((100vw - 80px) / 5) - 1rem);
+  height: 8.8px;
+  opacity: 0.8;
+}
+
+.menu{
+  position: absolute;
+  top: calc(31.2px + 25px);
+  background-color: $lightgrey;
+  padding: 0px 10px;
+    &:hover{
+      cursor: pointer;
+    }
+    h3{
+      padding-top: 1.6px;
+    }
+}
+
+.lang{
+  height: 20.6px;
+  position: absolute;
+  top: calc(31.2px + 25px);
+  right: 0;
+  padding: 0px 0px 0px 10px;
+  background-color: $lightgrey;
+  color: $green;
+    a{
+      text-transform: uppercase;
+        &:hover{
+        cursor: pointer;
+        color: $green !important;
+      }
+    }
+    a span::after {
+      content: '/';
+    }
+    h3{
+      padding-top: 1.6px;
+    }
+}
+
+/*iphone*/
+
+@media (min-width: 320px) {
+  .footer{
+    display: none;
+  }
+
+  .footer-iphone {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0rem 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: "ConcernLight",sans-serif;
+    background-color: $lightgrey;
+  }
+
+  .footer-right-iphone .request-iphone .footer-left-iphone{
+    width: calc(100vw - 30px);
+  }
+
+  .footer-right-iphone{
+    display: none;
+    width: calc(100vw - 30px);
+    padding-top: 15px;
+    // display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .footer-address-iphone {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+
+  }
+
+  .footer-info-iphone {
+    width: 50%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+
+  .request-iphone {
+    display: none;
+    button {
+      width: calc(100vw - 30px) !important;
+      height: 42px !important;
+    }
+    padding-top: 15px;
+  }
+
+  .footer-left-iphone{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    //margin-top: 15px;
+    width: calc(100vw - 30px);
+    margin-bottom: 15px;
+    padding-top: 0.4rem;
+  }
+
+  .footer-logo-iphone{
+    padding-right: 15px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    height: 4vh;
+  }
+
+  .footer-menu-iphone{
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display : flex;
+    height: 7.5vh;
+  }
+
+  .line-iphone {
+    border-bottom: 1px solid #008738;
+    width: 100%;
+  }
+
+  .lang-iphone{
+    width: 100%;
+    height: 3vh;
+    padding: 0px 0px 0px 10px;
+    color: $green;
+    text-align: justify;
+    text-justify: inter-word;
+    position: initial;
+    padding: 0;
+      a{
+        text-transform: uppercase;
+          &:hover{
+          cursor: pointer;
+          color: $green !important;
+        }
+      }
+      a span::after {
+        content: '/';
+      }
+      h3{
+        padding-top: 1.6px;
+      }
+    }
+
+}
+
+/*iphone 5*/
+@media (min-width: 320px) {
+  .lang-iphone{
+    word-spacing: 9px;
+  }
+  .line-iphone {
+    height: 3px;
+  }
+}
+
+/*blackberry*/
+@media (min-width: 360px) {
+  .lang-iphone{
+    word-spacing: 10.5px;
+  }
+}
+
+
+/*Iphone 6/7/8 X */
+@media (min-width: 375px) {
+
+  .lang-iphone{
+    word-spacing: 10px;
+  }
+
+}
+
+/*Iphone 6/7/8+ */
+@media (min-width: 414px) {
+
+  .lang-iphone{
+    word-spacing: 17px;
+  }
+
+  .line-iphone {
+    height: 4px;
+  }
+
+}
+
+/*ipad*/
+@media (min-width: 720px) and (min-height: 1020px) {
+
+  .footer-iphone{
+    margin: 0 2em;
+    width: calc(100vw - 4em);
+  }
+
+  .footer-menu-iphone {
+      flex: 0 0 calc(100%/3 - 1rem);
+  }
+
+  .footer-left-iphone {
+    width: calc(100vw - 4em);
+    margin-top: 25px;
+    margin-bottom: 2em;
+  }
+
+  .request-iphone {
+    button {
+      width: calc(100vw - 5.8em) !important;
+      height: 60px !important;
+    }
+  }
+
+  .lang-iphone{
+    word-spacing: 66px;
+  }
+
+  .line-iphone {
+    height: 20px;
+  }
+
+}
+
+/*ipad pro*/
+@media (min-width: 1020px) and (min-height: 1360px){
+
+  .request-iphone {
+    button {
+      width: calc(100vw - 7.5em) !important;
+      height: 60px !important;
+    }
+  }
+
+  .lang-iphone {
+      word-spacing: 53px;
+  }
+
+}
+
+/*Laptops*/
+@media (min-width: 1025px) {
+  .footer-iphone{
+    display: none;
+  }
+
+  .footer {
+    display: block;
+    margin: 0 2.5em;
+    padding-bottom: 2.5em;
+    flex-direction: row;
+    width: calc(100vw - 80px);
+//    height: calc(21.3vh - 40px);
+    font-family: "ConcernLight",sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .request-iphone {
+    button {
+      width: calc(100vw - 30px) !important;
+    }
+  }
+
+}
+
+/*large device*/
+@media (min-width: 1920px) {
+  .request {
+    width: calc(((100vw - 5em) / 5) - 1.6rem);
+  }
+
+  .line{
+    width: calc(((100vw - 5em) / 5) - 1.6rem);
+    height: 12.6px;
+  }
+
+  .lang{
+    padding: 0px 5px 0px 10px;
+    top: calc(48.2px + 38px);
+  }
+
+  .menu{
+    top: calc(48.2px + 38px);
+  }
+
+}
+
+
+

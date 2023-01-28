@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "ConcernLight";
+  src: font-url('Concern-Light.otf');
+}
+@font-face {
+  font-family: "ConcernRegular";
+  src: font-url('Concern-Regular.otf');
+}
+@font-face {
+  font-family: "MinionPro";
+  src: font-url('MinionPro-Regular.otf');
+}
+@font-face {
+  font-family: "Shinntype";
+  src: font-url('Shinntype-BeaufortLight.ttf');
+}
+
+$grey: #666666;
+$lightgrey: #fafafa;
+$green: #008738;
+
+html {
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	margin:0 !important;
+	padding:0 !important;
+	// height:100% !important;
+	line-height: 1;
+	// letter-spacing: .02em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	background-color: $lightgrey;
+}
+
+h1, h2, h3, h4, p {
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+    font-weight: normal !important;
+    margin: 0;
+  	color: $green;
+}
+
+main{
+	 height:100%;
+}
+
+a{
+  text-decoration: none !important;
+  color: $green !important;
+  	&:hover {
+  		color: $green !important;
+  	}
+}
+
+h1{
+	font-family:  "Shinntype",sans-serif;
+	font-stretch: 98%;
+}
+
+h2{
+	font-family:  "Shinntype",sans-serif;
+}
+
+
+p {
+	font-family:  "ConcernRegular",sans-serif;
+}
+
+*::selection {
+  background: $green;
+  color: white;
+}
+
+button {
+	margin: 0px;
+	text-align: center;
+	border: 1px solid $green;
+	background-color: transparent !important;
+	cursor: pointer;
+	width: calc(((100vw - 80px) / 5) - 1rem) !important;
+  	font-family: "ConcernLight",sans-serif;
+  	outline : none;
+  	padding: 3px 7px 1px;
+	-moz-outline : none;
+  	&:hover {
+  		background-color: $green !important;
+  		transition: all 0.2s ease-out;
+  		h4{
+			color: white !important;
+  		}
+  	}
+}
+
+.padding-bottom{
+	padding-bottom: 3.562em;
+}
+
+.padding-top-small{
+    padding-top: 0.4rem !important;
+}
+
+.cesure{
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+.full-height{
+	height: 100%;
+}
+
+/*iphone 5*/
+@media (min-width: 320px) {
+	main{
+		margin: 15px;
+		// height: 200vh;
+	}
+
+	h2{
+	    font-size: 18.5px;
+	    line-height: 18.5px;
+	}
+
+	p{
+		font-size: 36px;
+		line-height: 45px;
+	}
+
+
+	h1{
+	font-size: 34px;
+		span{
+	    	font-size: 27px;
+	  	}
+	}
+
+	h3{
+	    font-size: 14px;
+	    line-height: 16px;
+	}
+
+	h4{
+		font-size: 13px;
+	}
+
+	button{
+		height: 31.2px !important;
+	}
+
+  .dots-top {
+    border-top: 2px dotted $grey;  /* border-top only */
+  }
+
+  .dots-bottom {
+   border-bottom: 2px dotted $grey; /* border-bottom only */
+  }
+
+  .dots-top-and-bottom {
+     border-top: 2px dotted $grey;
+     border-bottom: 2px dotted $grey;
+  }
+
+}
+
+/*blackberry*/
+@media (min-width: 360px) {
+
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 21px;
+    	line-height: 21px;
+	}
+}
+
+/*Iphone 6/7/8 X */
+@media (min-width: 375px) {
+	h1{
+		font-size: 41px;
+		span{
+	    font-size: 27px;
+	  	}
+	}
+
+	h2{
+		font-size: 22px;
+    	line-height: 22px;
+	}
+
+
+	h3{
+		font-size: 17px;
+    	line-height: 19px;
+	}
+
+	h4{
+		font-size: 16px;
+	}
+}
+
+/*Iphone 6/7/8+ */
+@media (min-width: 414px) {
+
+	h1{
+		font-size: 45px;
+	}
+
+	h2{
+		font-size: 24.5px;
+    	line-height: 24.5px;
+	}
+
+}
+
+/*ipad */
+@media (min-width: 720px) and (min-height: 1020px) {
+
+	main{
+		margin: 2.25em 2em;
+	}
+
+	h1{
+		font-size: 70px;
+		span{
+	    font-size: 50px;
+	  	}
+	}
+
+	h2{
+	    font-size: 35px;
+	    line-height: 34.5px;
+	}
+
+
+	h3{
+		font-size: 28px;
+	  	line-height: 33px;
+	}
+
+	h4{
+		font-size: 27px;
+	}
+
+	p {
+    font-size: 12px;
+    line-height: 14px;
+	}
+
+  .dots-top {
+    border-top: none;
+    border-width: 4px 0 0px;  /* border-top only */
+  }
+
+  .dots-bottom {
+    border-bottom: none;
+    border-width: 0px 0 4px;  /* border-bottom only */
+  }
+
+  .dots-top-and-bottom {
+    border-top: none;
+    border-bottom: none;
+    border-width: 4px 0 4px;
+  }
+
+  .dots {
+    border-style: dotted;
+    border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572617571/Clients/Roel/dots-f_fcrkxp.svg');
+   /*   border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572337896/Clients/Roel/dots-20_js0kjp.svg');*/
+    border-image-slice: 29%; /* no unit for px, you can use % */
+    border-image-repeat: round; /* the middle slices will be repeated cleanly up to the edges */
+    border-image-outset: 1px;
+  }
+
+}
+
+/*ipad pro*/
+@media (min-width: 1020px) and (min-height: 1360px){
+
+	h1{
+		font-size: 105px;
+		span{
+			font-size: 70px;
+		}
+	}
+
+	h2 {
+    font-size: 38px;
+    line-height: 42px;
+	}
+
+	h3 {
+	    font-size: 32px;
+	    line-height: 36px;
+	}
+
+	h4{
+		font-size: 34px;
+	}
+
+    .dots-top {
+    border-top: none;
+    border-width: 4px 0 0px;  /* border-top only */
+  }
+
+  .dots-bottom {
+    border-bottom: none;
+    border-width: 0px 0 4px;  /* border-bottom only */
+  }
+
+  .dots-top-and-bottom {
+    border-top: none;
+    border-bottom: none;
+    border-width: 4px 0 4px;
+  }
+
+  .dots {
+    border-style: dotted;
+    border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572617571/Clients/Roel/dots-f_fcrkxp.svg');
+   /*   border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572337896/Clients/Roel/dots-20_js0kjp.svg');*/
+    border-image-slice: 29%; /* no unit for px, you can use % */
+    border-image-repeat: round; /* the middle slices will be repeated cleanly up to the edges */
+    border-image-outset: 1px;
+  }
+
+
+}
+
+/*Laptops*/
+@media (min-width: 1200px) {
+	main{
+		margin: 2.25em 2.5em;
+	}
+
+	h1{
+		font-size: 74px;
+    	line-height: 56px;
+		span{
+	    font-size: 40px;
+	  	}
+	}
+
+	h2{
+		font-size: 31px;
+		line-height: 31px;
+	}
+
+	h3{
+		font-size: 17px;
+	    line-height: 19px;
+	}
+
+	h4{
+		font-size: 16px;
+	    line-height: 19px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+    .dots-top {
+    border-top: none;
+    border-width: 4px 0 0px;  /* border-top only */
+  }
+
+  .dots-bottom {
+    border-bottom: none;
+    border-width: 0px 0 4px;  /* border-bottom only */
+  }
+
+  .dots-top-and-bottom {
+    border-top: none;
+    border-bottom: none;
+    border-width: 4px 0 4px;
+  }
+
+  .dots {
+    border-style: dotted;
+    border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572617571/Clients/Roel/dots-f_fcrkxp.svg');
+   /*   border-image-source: url('https://res.cloudinary.com/mathildanancia/image/upload/v1572337896/Clients/Roel/dots-20_js0kjp.svg');*/
+    border-image-slice: 29%; /* no unit for px, you can use % */
+    border-image-repeat: round; /* the middle slices will be repeated cleanly up to the edges */
+    border-image-outset: 1px;
+  }
+
+
+}
+
+/*large device*/
+@media (min-width: 1920px) {
+
+	h1{
+		font-size: 102px;
+		line-height: 74px;
+		span{
+	    	font-size: 70px;
+	  	}
+	}
+
+	h2{
+	    font-size: 42px;
+	    line-height: 39px;
+	}
+
+	h3{
+	    font-size: 23px;
+	    line-height: 26.9px;
+	}
+
+	h4{
+		font-size: 22px;
+	}
+
+	p {
+	    font-size: 19.5px;
+	    line-height: 24px;
+	}
+
+	button {
+		height: 48.2px !important;
+		width: calc(((100vw - 5rem) / 5) - 1.6rem) !important;
+	}
+}
+

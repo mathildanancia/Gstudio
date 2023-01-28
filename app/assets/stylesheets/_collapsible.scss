@@ -1,0 +1,180 @@
+.collapsible {
+  cursor: pointer;
+  padding: 0.8rem 0;
+  text-align: left;
+  width: calc(100vw - 5em);
+}
+
+.active, .collapsible:hover {
+  // background-color: $lightgrey;
+}
+
+.collapsible:after {
+  content: "";
+  float: right;
+  width: 29px;
+  height: 29px;
+  background: url(arrow_rotate.png) no-repeat 0 0;
+  background-size: 100%;
+  margin-top: -1.7em;
+}
+
+.active:after {
+  content: "";
+  float: right;
+  width: 29px;
+  height: 29px;
+  background: url("arrow.png") no-repeat 0 0;
+  background-size: 100%;
+  margin-top: -1.7em;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/*iphone 5*/
+@media (min-width: 320px) {
+
+   .collapsible {
+    cursor: pointer;
+    padding: 10px 0px 5px;
+    width: calc(100vw - 30px);
+    text-align: left;
+  }
+
+  .collapsible:after {
+    width: 16.7px;
+    height: 16.7px;
+    margin-top: -0.96em;
+  }
+
+  .active:after {
+    width: 16.7px;
+    height: 16.7px;
+    margin-top: -0.96em;
+  }
+
+}
+
+/*blackberry*/
+@media (min-width: 360px) {
+  .collapsible:after {
+    width: 19px;
+    height: 19px;
+    margin-top: -1.15em;
+  }
+
+  .active:after {
+    width: 19px;
+    height: 19px;
+    margin-top: -1.15em;
+  }
+
+}
+
+/*Iphone 6/7/8 X */
+@media (min-width: 375px) {
+
+  .collapsible:after {
+    width: 19px;
+    height: 19px;
+    margin-top: -1.19em;
+  }
+
+  .active:after {
+    width: 19px;
+    height: 19px;
+    margin-top: -1.19em;
+  }
+
+}
+
+/*Iphone 6/7/8+ */
+@media (min-width: 414px) {
+
+  .collapsible:after {
+    width: 22px;
+    height: 22px;
+    margin-top: -1.32em;
+  }
+
+  .active:after {
+    width: 22px;
+    height: 22px;
+    margin-top: -1.32em;
+  }
+}
+
+
+/*ipad*/
+@media (min-width: 720px) and (min-height: 1020px) {
+
+  .collapsible {
+   padding: 10px 0px 6px;
+   width: calc(100vw - 4em);
+  }
+
+  .collapsible:after {
+    width: 37px;
+    height: 37px;
+    margin-top: -1.9em;
+  }
+
+  .active:after {
+    width: 37px;
+    height: 37px;
+    margin-top: -1.9em;
+  }
+
+}
+
+
+/*ipad pro*/
+@media (min-width: 1020px) and (min-height: 1360px){
+  .collapsible:after {
+    width: 43px;
+    height: 43px;
+    margin-top: -2.5em;
+  }
+
+  .active:after {
+    width: 43px;
+    height: 43px;
+    margin-top: -2.5em;
+  }
+}
+
+/*Laptops*/
+@media (min-width: 1020px) {
+
+  .collapsible {
+    padding: 0.8rem 0 0.3rem;
+    width: calc(100vw - 5em);
+  }
+
+  .collapsible:after {
+    width: 29px;
+    height: 29px;
+    margin-top: -1.7em;
+
+  }
+
+  .active:after {
+     width: 29px;
+    height: 29px;
+    margin-top: -1.7em;
+  }
+
+}
+
+/*large device*/
+@media (min-width: 1920px) {
+  .collapsible{
+    padding: 0.7rem 0 0.4rem 0;
+  }
+
+}

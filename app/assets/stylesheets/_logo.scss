@@ -1,0 +1,108 @@
+.vert-move {
+    -webkit-animation: mover 1.8s cubic-bezier(0.5, 0.2, 0.3, 0.5) infinite  alternate;
+    animation: mover 1.8s cubic-bezier(0.5, 0.2, 0.3, 0.5) infinite  alternate;
+}
+.vert-move {
+    -webkit-animation: mover 1.8s cubic-bezier(0.5, 0.2, 0.3, 0.5) infinite  alternate;
+    animation: mover 1.8s cubic-bezier(0.5, 0.2, 0.3, 0.5) infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5);}
+    100% { transform: translateY(-7px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5);}
+    100% { transform: translateY(-7px); }
+}
+
+
+
+/*iphone 5*/
+@media (min-width: 320px) {
+  .logo-a {
+      margin-bottom: -31px;
+  }
+  .dot {
+      padding-bottom: 18px;
+  }
+
+}
+
+
+@media (min-width: 375px) {
+  .logo-a{
+    margin-bottom: -35px;
+  }
+
+  .dot{
+    padding-bottom: 24px;
+  }
+
+}
+
+/*Iphone 6/7/8+ */
+@media (min-width: 414px) {
+
+  .logo-a{
+    margin-bottom: -37px;
+  }
+
+  .dot{
+    padding-bottom: 29px;
+  }
+
+}
+
+
+/*ipad*/
+@media (min-width: 720px) {
+  .logo-a{
+    margin-bottom: -59px;
+  }
+
+  .dot{
+    padding-bottom: 44px;
+  }
+
+}
+
+/*ipad pro*/
+@media (min-width: 1020px) {
+  .logo-a {
+    margin-bottom: -79px;
+  }
+
+    .dot{
+    padding-bottom: 74px;
+  }
+}
+
+/*Laptops*/
+@media (min-width: 1200px) {
+  .logo-a{
+    margin-bottom: -43px;
+  }
+
+  .dot{
+    padding-bottom: 7px;
+  }
+
+
+}
+
+/*large device*/
+@media (min-width: 1920px) {
+  .logo-a {
+    margin-bottom: -80px;
+  }
+
+  .dot {
+    padding-bottom: 25px;
+  }
+
+}
+
+
+
