@@ -1,0 +1,131 @@
+	<div class="footer dots dots-top">
+		<div class="footer-left ">
+		  <div class="footer-logo">
+			<div><h1>G</h1></div>
+			<div class="jump">
+				<div class="logo-a vert-move"><h1>A</h1></div>
+				<div class="dot"><h1><span>.</span></h1></div>
+			</div>
+			<div><h1>EA STUDIO</h1></div>
+		  </div>
+
+		</div>
+
+		<div class="footer-right">
+		    <div class="footer-address">
+		    	<h3>Oostzeedijk 108
+		    	<br>3063BG Rotterdam
+		    	<br>The Netherlands
+		    	</h3>
+		    </div>
+		    <div class="footer-info">
+		    	<h3>(+31) 6 43 15 24 91
+		    	<br>info@gaeastudio.nl
+		    	<br>
+		    	<% if page.content(:instagram) %>
+				    <%= link_to " https://www.instagram.com/" + page.content(:instagram) do %>
+				    	@<%= page.content(:instagram) %>
+				    <% end %>
+			    <% end %>
+		    	</h3>
+		    </div>
+		    <div class="footer-menu">
+		    	<div class="request">
+		    		<% if page.content(:email) %>
+			    		<%= link_to "mailto:" + page.content(:email) do %>
+			    			<button class="request-button"><h4>REQUEST A BOOKING</h4></button>
+			    		<% end %>
+		    		<% end %>
+		    	</div>
+		    	<div class="line"></div>
+		    	<div class="line"></div>
+		    	<div class="line"></div>
+		    	<div class="line"></div>
+		    	<div class="line"></div>
+		    	<div class="line"></div>
+
+		    	<div class="menu"> <h4>Menu</h4></div>
+		    	<div class="lang">
+		    		<h4>
+				    	<% if Spina.config.locales.size > 1 %>
+						    <% if I18n.locale == :en %>
+						      <%= link_to_unless(:nl == I18n.locale, content_tag("span", "EN") + "NL", @page.materialized_path(locale: :nl)) %>
+						    <% else %>
+						        <%= link_to_unless(:en == I18n.locale, content_tag("span", "NL") + "EN", @page.materialized_path(locale: :en)) %>
+						    <% end %>
+						<% end %>
+			    	</h4>
+				</div>
+		    </div>
+		 </div>
+ 	</div>
+
+<!------------------------------------------------------ iphone-------------------------------------------------------->
+<!------------------------------------------------------ iphone-------------------------------------------------------->
+<!------------------------------------------------------ iphone-------------------------------------------------------->
+<!------------------------------------------------------ iphone-------------------------------------------------------->
+<!------------------------------------------------------ iphone-------------------------------------------------------->
+
+	<div class="footer-iphone dots dots-top">
+
+		<div class="footer-right-iphone">
+		    <div class="footer-address-iphone">
+		    	<h3>Oostzeedijk 108
+		    	<br>3063BG Rotterdam
+		    	<br>The Netherlands
+		    	</h3>
+		    </div>
+		    <div class="footer-info-iphone">
+		    	<h3>(+31) 6 43 15 24 91
+		    	<br>info@gaeastudio.nl
+		    	<br>
+		    	<% if page.content(:instagram) %>
+				    <%= link_to " https://www.instagram.com/" + page.content(:instagram) do %>
+				    	@<%= page.content(:instagram) %>
+				    <% end %>
+			    <% end %>
+		    	</h3>
+		    </div>
+		</div>
+
+		<div class="request-iphone">
+    		<% if page.content(:email) %>
+	    		<%= link_to "mailto:" + page.content(:email) do %>
+	    			<button class="request-button"><h4>REQUEST A BOOKING</h4></button>
+	    		<% end %>
+    		<% end %>
+    	</div>
+
+		<div class="footer-left-iphone">
+		  	<div class="footer-logo-iphone">
+				<div><h1>G</h1></div>
+				<div class="jump">
+					<div class="logo-a vert-move"><h1>A</h1></div>
+					<div class="dot"><h1><span>.</span></h1></div>
+				</div>
+				<div><h1>EA STUDIO</h1></div>
+			</div>
+
+			<div class="footer-menu-iphone">
+				<div class="lang-iphone">
+		    		<h4>
+				    	<% if Spina.config.locales.size > 1 %>
+						    <% if I18n.locale == :en %>
+						        <%= link_to_unless(:nl == I18n.locale, content_tag("span", "en ") + " nl", @page.materialized_path(locale: :nl)) %>
+						    <% else %>
+						        <%= link_to_unless(:en == I18n.locale, content_tag("span", "nl ") + " en", @page.materialized_path(locale: :en)) %>
+						    <% end %>
+						<% end %>
+			    	</h4>
+				</div>
+
+		    	<div class="line-iphone"></div>
+		    	<div class="line-iphone"></div>
+		    	<div class="line-iphone"></div>
+		    	<div class="line-iphone"></div>
+		    	<div class="line-iphone"></div>
+		    	<div class="line-iphone"></div>
+		    </div>
+		</div>
+
+ 	</div>
