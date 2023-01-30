@@ -1,7 +1,7 @@
 Spina::Theme.register do |theme|
   # All views are namespaced based on the theme's name
-  theme.name = 'my_theme'
-  theme.title = 'My Theme'
+  theme.name = 'default'
+  theme.title = 'efault Theme'
 
   # Parts
   # Define all editable parts you want to use in your view templates
