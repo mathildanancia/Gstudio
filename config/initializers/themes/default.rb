@@ -17,9 +17,6 @@ Spina::Theme.register do |theme|
   # - Repeater
   theme.parts = [
 
-    {name: 'body',  title: "Body",  part_type: "Spina::Parts::Text"},
-
-
     {name: 'section1',  title: "Section 1",  part_type: "Spina::Parts::Text"},
     {name: 'title1',  title: "Title 1",  part_type: "Spina::Parts::Line"},
     {name: 'section2',  title: "Section 2",  part_type: "Spina::Parts::Text"},
@@ -28,13 +25,9 @@ Spina::Theme.register do |theme|
     {name: 'title3',  title: "Title 3",  part_type: "Spina::Parts::Line"},
     {name: 'section4',  title: "Section 4",  part_type: "Spina::Parts::Text"},
     {name: 'title4',  title: "Title 4",  part_type: "Spina::Parts::Line"},
-
     {name: 'email',  title: "Email",  part_type: "Spina::Parts::Line"},
     {name: 'instagram',  title: "Instagram",  part_type: "Spina::Parts::Line"},
 
-
-    {name: "tags",  title: "Tags",  part_type: "Spina::Parts::Line"},
-    {name: "image", title: "Image", part_type: "Spina::Parts::Image"}
   ]
 
   # View templates
@@ -53,18 +46,5 @@ Spina::Theme.register do |theme|
     {name: 'homepage', title: "Homepage", deletable: false, view_template: "homepage"},
   ]
 
-  # Navigations (optional)
-  # If your project has multiple navigations, it can be useful to configure multiple
-  # navigations.
-  theme.navigations = [
-    {name: 'main', label: 'Main navigation'}
-  ]
-
-  # Resources (optional)
-  # Think of resources as a collection of pages. They are managed separately in Spina
-  # allowing you to separate these pages from the 'main' collection of pages.
-  theme.resources = [
-    {name: 'articles', label: "Articles", view_template: "article", slug: "articles"}
-  ]
 
 end
