@@ -16,6 +16,7 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [
+
     {name: 'body',  title: "Body",  part_type: "Spina::Parts::Text"},
     {name: "tags",  title: "Tags",  part_type: "Spina::Parts::Line"},
     {name: "image", title: "Image", part_type: "Spina::Parts::Image"}
@@ -27,9 +28,7 @@ Spina::Theme.register do |theme|
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
     {name: 'homepage', title: 'Homepage', parts: %w(body)},
-    {name: 'show',     title: 'Page',     parts: %w(body)},
-    {name: 'articles', title: 'Articles', parts: %w(body)},
-    {name: 'article',  title: 'Article',  parts: %w(body tags)}
+    {name: 'show',     title: 'Page',     parts: %w(body)}
   ]
 
   # Custom pages
@@ -37,7 +36,6 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'homepage', title: "Homepage", deletable: false, view_template: "homepage"},
-    {name: 'articles', title: "Articles", deletable: false, view_template: "articles"}
   ]
 
   # Navigations (optional)
