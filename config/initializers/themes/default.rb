@@ -29,6 +29,10 @@ Spina::Theme.register do |theme|
     {name: 'section4',  title: "Section 4",  part_type: "Spina::Parts::Text"},
     {name: 'title4',  title: "Title 4",  part_type: "Spina::Parts::Line"},
 
+    {name: 'email',  title: "Email",  part_type: "Spina::Parts::Line"},
+    {name: 'instagram',  title: "Instagram",  part_type: "Spina::Parts::Line"},
+
+
     {name: "tags",  title: "Tags",  part_type: "Spina::Parts::Line"},
     {name: "image", title: "Image", part_type: "Spina::Parts::Image"}
   ]
@@ -38,7 +42,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: 'homepage', title: 'Homepage', parts: %w(section1, title1, section2, title2)},
+    {name: 'homepage', title: 'Homepage', parts: ['title1', 'section1', 'title2', 'section2', 'title3', 'section3', 'title4', 'section4', 'email', 'instagram']},
     {name: 'show',     title: 'Page',     parts: %w(body)}
   ]
 
