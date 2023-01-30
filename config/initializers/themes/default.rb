@@ -38,7 +38,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: 'homepage', title: 'Homepage', parts: %w(title1)},
+    {name: 'homepage', title: 'Homepage', parts: %w(section1, title1, section2, title2)},
     {name: 'show',     title: 'Page',     parts: %w(body)}
   ]
 
